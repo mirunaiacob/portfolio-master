@@ -1,26 +1,26 @@
 /* ============================================================
    PORTFOLIO — SCRAPBOOK STYLE
-   Colorful palette: orange, pink, yellow, coral, teal, cream
+   Colorful palette: burnt orange #D26A3A, pink, yellow, amber, purple, cream
    ============================================================ */
 
 /* ── CUSTOM PROPERTIES (edit to retheme) ── */
 :root {
   /* Paper / background tones */
-  --cream:        #FFF8F0;
-  --paper:        #FFFBF5;
-  --paper-dark:   #F5EDE0;
+  --cream:        #FFF6EE;
+  --paper:        #FFFAF5;
+  --paper-dark:   #F5EAE0;
 
   /* Brand colours */
-  --orange:       #FF6B35;
-  --orange-light: #FF8C5A;
-  --orange-pale:  #FFD5C2;
+  --orange:       #D26A3A;
+  --orange-light: #E0845A;
+  --orange-pale:  #F5D0B8;
   --pink:         #FF4D8D;
   --pink-light:   #FF85B3;
   --pink-pale:    #FFD6E8;
   --yellow:       #FFD166;
   --yellow-pale:  #FFF3C4;
-  --coral:        #FF7F7F;
-  --coral-pale:   #FFE0E0;
+  --coral:        #C94040;
+  --coral-pale:   #F7CECE;
   --teal:         #FF9F1C;
   --teal-pale:    #FFF0D4;
   --blue:         #4CC9F0;
