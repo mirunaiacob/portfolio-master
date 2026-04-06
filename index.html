@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio — Brand Management & Creativity</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Caveat (handwritten) + DM Sans (clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ========================================================
+       NAVIGATION
+  ======================================================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <!-- EDIT: Replace with your initials -->
+      <span class="nav__initials">M.I.</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========================================================
+       HERO / COVER PAGE
+  ======================================================== -->
+  <section class="hero" id="hero">
+
+    <!-- Decorative tape strips -->
+    <div class="tape tape--hero-top"></div>
+    <div class="tape tape--hero-left"></div>
+
+    <!-- Floating sticky notes (draggable) -->
+    <div class="sticky sticky--yellow draggable" data-id="s1" style="top:12%; left:5%;">
+      <p>
+        <!-- EDIT: Your short tagline -->
+        "Design is the silent ambassador of your brand."
+      </p>
+      <span class="sticky__author">— Paul Rand</span>
+    </div>
+
+    <div class="sticky sticky--pink draggable" data-id="s2" style="top:65%; left:8%;">
+      <p>
+        <!-- EDIT: A personal note or fun fact -->
+        Currently obsessed with: brand archetypes, Mediterranean colour palettes & oat milk lattes ☕
+      </p>
+    </div>
+
+    <div class="sticky sticky--blue draggable" data-id="s3" style="top:20%; right:6%;">
+      <p>
+        <!-- EDIT: Your destination note -->
+        Destination: <strong>Barcelona</strong><br/>
+        Programme: Brand Management & Creativity<br/>
+        School: ESDI / BAU / IED ✦
+      </p>
+    </div>
+
+    <!-- Main hero content -->
+    <div class="hero__center">
+      <p class="hero__label">Portfolio Application · 2025</p>
+      <!-- EDIT: Your name -->
+      <h1 class="hero__name">Miruna<br/><em>Iacob</em></h1>
+      <p class="hero__subtitle">
+        <!-- EDIT: Your one-line descriptor -->
+        Brand Strategist · Creative Director · Storyteller
+      </p>
+      <a href="#about" class="hero__scroll-cue">
+        <span>Flip the page</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Decorative polaroid -->
+    <div class="polaroid polaroid--hero draggable" data-id="p-hero" style="bottom:8%; right:5%;">
+      <div class="polaroid__img polaroid__img--placeholder">
+        <!-- EDIT: Replace this div with an <img src="assets/hero-photo.jpg" alt="Your name"> -->
+        <span class="polaroid__initials">
+          <!-- EDIT: Your initials -->
+          MI
+        </span>
+      </div>
+      <p class="polaroid__caption">
+        <!-- EDIT: Caption for your photo -->
+        That's me, somewhere between a brand deck and a coffee.
+      </p>
+    </div>
+
+    <!-- Paper clip decoration -->
+    <div class="paperclip paperclip--hero"></div>
+
+  </section>
+
+  <!-- ========================================================
+       ABOUT ME
+  ======================================================== -->
+  <section class="section about" id="about">
+    <div class="section__inner">
+
+      <div class="section__header">
+        <div class="tape tape--label"></div>
+        <h2 class="section__title">About Me</h2>
+      </div>
+
+      <div class="about__grid">
+
+        <!-- Left: Bio card (notebook page) -->
+        <div class="notebook-card">
+          <div class="notebook-card__margin"></div>
+          <div class="notebook-card__content">
+            <h3>
+              <!-- EDIT: Your name -->
+              Hi, I'm Miruna
+            </h3>
+            <p>
+              <!-- EDIT: Your bio paragraph 1 -->
+              I'm a brand and communications professional with a background in [your field — e.g. marketing, graphic design, journalism]. I've spent the last [X] years building brand identities, leading creative campaigns, and translating complex ideas into compelling visual stories.
+            </p>
+            <p>
+              <!-- EDIT: Your bio paragraph 2 -->
+              My work sits at the intersection of strategy and aesthetics — I believe a strong brand doesn't just look good, it <em>means</em> something. I'm applying to this master's because I want to deepen that conviction with rigorous methodology, global perspective, and a Barcelona state of mind.
+            </p>
+            <p>
+              <!-- EDIT: Your bio paragraph 3 -->
+              When I'm not obsessing over typography choices or mood-boarding at midnight, you'll find me [your hobby — e.g. hiking, cooking, reading].
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Info sticky notes cluster -->
+        <div class="about__notes">
+
+          <div class="sticky sticky--green sticky--small" style="transform: rotate(-2deg);">
+            <strong>From</strong>
+            <!-- EDIT: Your city/country -->
+            <p>Bucharest, Romania 🇷🇴</p>
+          </div>
+
+          <div class="sticky sticky--yellow sticky--small" style="transform: rotate(1.5deg); margin-top: -0.5rem; margin-left: 2rem;">
+            <strong>Education</strong>
+            <!-- EDIT: Your degree(s) -->
+            <p>BA in [Your Degree]<br/>[University Name], [Year]</p>
+          </div>
+
+          <div class="sticky sticky--pink sticky--small" style="transform: rotate(-1deg); margin-top: -0.5rem;">
+            <strong>Languages</strong>
+            <!-- EDIT: Your languages -->
+            <p>Romanian (native)<br/>English (C1)<br/>Spanish (B1)</p>
+          </div>
+
+          <div class="sticky sticky--blue sticky--small" style="transform: rotate(2deg); margin-top: -0.5rem; margin-left: 1rem;">
+            <strong>Currently</strong>
+            <!-- EDIT: Your current role -->
+            <p>[Job Title] at [Company]<br/>Since [Year]</p>
+          </div>
+
+          <!-- Pin decoration -->
+          <div class="pin pin--red" style="top: -10px; left: 50%;"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       WORK / PROJECTS
+  ======================================================== -->
+  <section class="section work" id="work">
+    <div class="section__inner">
+
+      <div class="section__header">
+        <div class="tape tape--label tape--pink"></div>
+        <h2 class="section__title">Selected Work</h2>
+      </div>
+
+      <p class="section__intro">
+        <!-- EDIT: Optional intro sentence -->
+        A few projects I'm proud of — click any card to flip it and read more.
+      </p>
+
+      <!-- Project cards grid (flip cards) -->
+      <div class="projects-grid">
+
+        <!-- ── PROJECT 1 ── -->
+        <div class="flip-card" tabindex="0" aria-label="Project: Brand Identity">
+          <div class="flip-card__inner">
+
+            <!-- Front -->
+            <div class="flip-card__front">
+              <div class="project-img project-img--1">
+                <!-- EDIT: Replace with <img src="assets/project1.jpg" alt="Project 1"> -->
+                <span class="project-img__label">
+                  <!-- EDIT: Short project type -->
+                  Brand Identity
+                </span>
+              </div>
+              <div class="project-meta">
+                <div class="tape tape--small"></div>
+                <!-- EDIT: Project title -->
+                <h3>Bloom Studio</h3>
+                <!-- EDIT: Year + category tags -->
+                <p class="project-tags">2024 · Identity · Strategy</p>
+              </div>
+              <p class="flip-hint">Click to read more ↩</p>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card__back">
+              <h3>
+                <!-- EDIT: Project title (repeat) -->
+                Bloom Studio
+              </h3>
+              <p>
+                <!-- EDIT: Project description -->
+                A full brand identity for an independent floral design studio. Developed brand strategy, naming, visual identity system, and brand guidelines from scratch.
+              </p>
+              <ul class="project-details">
+                <!-- EDIT: Key deliverables / outcomes -->
+                <li>📌 Brand strategy & positioning</li>
+                <li>📌 Logo system + typography</li>
+                <li>📌 Colour palette & art direction</li>
+                <li>📌 Brand guidelines (40pp)</li>
+              </ul>
+              <!-- EDIT: Link to project (optional) -->
+              <a href="#" class="project-link" target="_blank">View case study →</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── PROJECT 2 ── -->
+        <div class="flip-card" tabindex="0" aria-label="Project: Campaign">
+          <div class="flip-card__inner">
+
+            <div class="flip-card__front">
+              <div class="project-img project-img--2">
+                <span class="project-img__label">Campaign</span>
+              </div>
+              <div class="project-meta">
+                <div class="tape tape--small tape--green"></div>
+                <!-- EDIT -->
+                <h3>Re:Earth Campaign</h3>
+                <p class="project-tags">2023 · Campaign · Sustainability</p>
+              </div>
+              <p class="flip-hint">Click to read more ↩</p>
+            </div>
+
+            <div class="flip-card__back">
+              <!-- EDIT -->
+              <h3>Re:Earth Campaign</h3>
+              <p>
+                Integrated brand campaign for a sustainable lifestyle brand targeting Gen Z. Led creative direction, copy strategy, and social media rollout across 4 channels.
+              </p>
+              <ul class="project-details">
+                <li>📌 Creative concept development</li>
+                <li>📌 360° campaign execution</li>
+                <li>📌 +42% engagement lift</li>
+                <li>📌 Featured in [Publication]</li>
+              </ul>
+              <a href="#" class="project-link" target="_blank">View case study →</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── PROJECT 3 ── -->
+        <div class="flip-card" tabindex="0" aria-label="Project: Packaging">
+          <div class="flip-card__inner">
+
+            <div class="flip-card__front">
+              <div class="project-img project-img--3">
+                <span class="project-img__label">Packaging</span>
+              </div>
+              <div class="project-meta">
+                <div class="tape tape--small tape--yellow"></div>
+                <!-- EDIT -->
+                <h3>Cera Artisan Candles</h3>
+                <p class="project-tags">2023 · Packaging · Retail</p>
+              </div>
+              <p class="flip-hint">Click to read more ↩</p>
+            </div>
+
+            <div class="flip-card__back">
+              <!-- EDIT -->
+              <h3>Cera Artisan Candles</h3>
+              <p>
+                Packaging redesign and brand refresh for a luxury candle brand expanding into European markets. Focused on premium positioning and sustainable materials.
+              </p>
+              <ul class="project-details">
+                <li>📌 Market research & positioning</li>
+                <li>📌 Packaging design system</li>
+                <li>📌 Retail & e-commerce adaptation</li>
+                <li>📌 +28% perceived premium value</li>
+              </ul>
+              <a href="#" class="project-link" target="_blank">View case study →</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── PROJECT 4 ── -->
+        <div class="flip-card" tabindex="0" aria-label="Project: Digital">
+          <div class="flip-card__inner">
+
+            <div class="flip-card__front">
+              <div class="project-img project-img--4">
+                <span class="project-img__label">Digital</span>
+              </div>
+              <div class="project-meta">
+                <div class="tape tape--small tape--blue"></div>
+                <!-- EDIT -->
+                <h3>Nomad Co-living</h3>
+                <p class="project-tags">2022 · Digital · UX</p>
+              </div>
+              <p class="flip-hint">Click to read more ↩</p>
+            </div>
+
+            <div class="flip-card__back">
+              <!-- EDIT -->
+              <h3>Nomad Co-living</h3>
+              <p>
+                Brand strategy and digital identity for a co-living startup targeting remote workers. Designed the full digital brand experience from app UI to social presence.
+              </p>
+              <ul class="project-details">
+                <li>📌 Brand strategy & voice</li>
+                <li>📌 UI/UX direction</li>
+                <li>📌 Social brand system</li>
+                <li>📌 Launched in 3 cities</li>
+              </ul>
+              <a href="#" class="project-link" target="_blank">View case study →</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── ADD MORE PROJECTS: Copy a flip-card block above and edit it ── -->
+
+      </div>
+
+      <!-- Extra polaroid decoration -->
+      <div class="polaroid polaroid--work draggable" data-id="p-work" style="bottom: 2rem; right: 2rem; transform: rotate(3deg);">
+        <div class="polaroid__img polaroid__img--accent">
+          <!-- EDIT: Replace with a photo of your workspace/mood board -->
+          <span class="polaroid__icon">✦</span>
+        </div>
+        <p class="polaroid__caption">
+          <!-- EDIT: Caption -->
+          the mood board that started it all
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SKILLS
+  ======================================================== -->
+  <section class="section skills" id="skills">
+    <div class="section__inner">
+
+      <div class="section__header">
+        <div class="tape tape--label tape--yellow"></div>
+        <h2 class="section__title">Skills &amp; Tools</h2>
+      </div>
+
+      <div class="skills__layout">
+
+        <!-- Skill bars (notebook-style) -->
+        <div class="skill-list">
+
+          <!-- EDIT: Add/remove/rename skills and adjust the data-level (0–100) -->
+
+          <div class="skill-item">
+            <span class="skill-name">Brand Strategy</span>
+            <div class="skill-track">
+              <div class="skill-bar" data-level="92"></div>
+            </div>
+            <span class="skill-pct">92%</span>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Visual Identity Design</span>
+            <div class="skill-track">
+              <div class="skill-bar" data-level="85"></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Creative Direction</span>
+            <div class="skill-track">
+              <div class="skill-bar" data-level="88"></div>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Copywriting &amp; Brand Voice</span>
+            <div class="skill-track">
+              <div class="skill-bar" data-level="80"></div>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Market Research</span>
+            <div class="skill-track">
+              <div class="skill-bar" data-level="75"></div>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Adobe Suite</span>
+            <div class="skill-track">
+              <div class="skill-bar" data-level="90"></div>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Figma</span>
+            <div class="skill-track">
+              <div class="skill-bar" data-level="78"></div>
+            </div>
+            <span class="skill-pct">78%</span>
+          </div>
+
+        </div>
+
+        <!-- Right: Tools & interests tag cloud -->
+        <div class="skills__right">
+
+          <div class="tag-cloud">
+            <h3 class="tag-cloud__title">Tools I use</h3>
+            <!-- EDIT: Add or remove tool tags -->
+            <span class="tag">Illustrator</span>
+            <span class="tag">Photoshop</span>
+            <span class="tag">InDesign</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Canva Pro</span>
+            <span class="tag">Notion</span>
+            <span class="tag">Miro</span>
+            <span class="tag">After Effects</span>
+            <span class="tag">Webflow</span>
+            <span class="tag">Mailchimp</span>
+            <span class="tag">Google Analytics</span>
+          </div>
+
+          <div class="tag-cloud tag-cloud--interests">
+            <h3 class="tag-cloud__title">Interested in</h3>
+            <!-- EDIT: Add or remove interest tags -->
+            <span class="tag tag--outline">Semiotics</span>
+            <span class="tag tag--outline">Brand Archetypes</span>
+            <span class="tag tag--outline">Neuromarketing</span>
+            <span class="tag tag--outline">Cultural Branding</span>
+            <span class="tag tag--outline">Luxury Brands</span>
+            <span class="tag tag--outline">Circular Design</span>
+            <span class="tag tag--outline">Experiential Marketing</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       VISION / MANIFESTO
+  ======================================================== -->
+  <section class="section vision" id="vision">
+    <div class="section__inner">
+
+      <div class="section__header">
+        <div class="tape tape--label tape--blue"></div>
+        <h2 class="section__title">My Vision</h2>
+      </div>
+
+      <div class="vision__layout">
+
+        <!-- Manifesto card -->
+        <div class="manifesto-card">
+          <div class="paperclip paperclip--manifesto"></div>
+          <h3 class="manifesto-card__heading">Why Barcelona?</h3>
+          <p>
+            <!-- EDIT: Your motivation / why this school -->
+            Barcelona is one of the world's most creative cities — a place where Gaudí's surrealism shares streets with cutting-edge design studios and global brand headquarters. Studying here means immersing myself in a culture that treats creativity not as decoration, but as infrastructure.
+          </p>
+          <p>
+            I chose this programme because it bridges what I've always kept separate: the analytical rigour of strategy and the intuitive freedom of creativity. I want to build brands that don't just sell, but <em>resonate</em> — brands that people genuinely belong to.
+          </p>
+          <p>
+            <!-- EDIT: Your 5-year goal -->
+            In five years, I see myself leading creative strategy at a European brand consultancy or launching my own studio focused on purpose-driven brands in Southern Europe and beyond.
+          </p>
+        </div>
+
+        <!-- Timeline / milestones -->
+        <div class="timeline">
+          <h3 class="timeline__title">Where I've been</h3>
+
+          <!-- EDIT: Add/remove/edit timeline entries -->
+          <div class="timeline__item">
+            <span class="timeline__year">2019</span>
+            <div class="timeline__content">
+              <!-- EDIT -->
+              <strong>Graduated</strong> — BA in [Your Degree], [University]
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <span class="timeline__year">2020</span>
+            <div class="timeline__content">
+              <!-- EDIT -->
+              <strong>First role</strong> — Junior [Title] at [Company]
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <span class="timeline__year">2022</span>
+            <div class="timeline__content">
+              <!-- EDIT -->
+              <strong>Promoted</strong> — [Title] at [Company]
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <span class="timeline__year">2023</span>
+            <div class="timeline__content">
+              <!-- EDIT -->
+              <strong>Freelance</strong> — Brand strategy & creative direction for [# of] clients
+            </div>
+          </div>
+
+          <div class="timeline__item timeline__item--now">
+            <span class="timeline__year">2025</span>
+            <div class="timeline__content">
+              <!-- EDIT -->
+              <strong>Next chapter</strong> — Master's in Brand Management & Creativity, Barcelona ✦
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Large decorative quote -->
+      <blockquote class="vision__quote">
+        <!-- EDIT: A quote that resonates with your creative philosophy -->
+        "The details are not the details.<br/>They make the design."
+        <cite>— Charles Eames</cite>
+      </blockquote>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CONTACT
+  ======================================================== -->
+  <section class="section contact" id="contact">
+    <div class="section__inner">
+
+      <div class="section__header">
+        <div class="tape tape--label tape--green"></div>
+        <h2 class="section__title">Say Hello</h2>
+      </div>
+
+      <div class="contact__layout">
+
+        <div class="contact__card">
+          <p class="contact__intro">
+            <!-- EDIT: Your contact intro -->
+            I'd love to connect — whether you're reviewing my application, looking to collaborate, or just want to talk about branding over coffee.
+          </p>
+
+          <ul class="contact__list">
+            <!-- EDIT: Your contact details -->
+            <li>
+              <span class="contact__icon">✉</span>
+              <!-- EDIT: Your email -->
+              <a href="mailto:hello@mirunaiacob.com">hello@mirunaiacob.com</a>
+            </li>
+            <li>
+              <span class="contact__icon">🌐</span>
+              <!-- EDIT: Your website -->
+              <a href="#" target="_blank">mirunaiacob.com</a>
+            </li>
+            <li>
+              <span class="contact__icon">in</span>
+              <!-- EDIT: Your LinkedIn -->
+              <a href="#" target="_blank">linkedin.com/in/mirunaiacob</a>
+            </li>
+            <li>
+              <span class="contact__icon">@</span>
+              <!-- EDIT: Your Instagram/Behance -->
+              <a href="#" target="_blank">@mirunaiacob</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Final sticky note -->
+        <div class="sticky sticky--yellow contact__sticky" style="transform: rotate(-2deg);">
+          <p>
+            <!-- EDIT: A personal closing note -->
+            Thank you for taking the time to look through my work. I put this together with the same care I give every brand project — and I can't wait to bring that energy to Barcelona. 🌊
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="footer">
+    <p>
+      <!-- EDIT: Your name + year -->
+      © 2025 Miruna Iacob · Portfolio for Brand Management & Creativity, Barcelona
+    </p>
+    <p class="footer__note">Made with intention — and a lot of sticky notes.</p>
+  </footer>
+
+  <!-- Cursor follower -->
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
